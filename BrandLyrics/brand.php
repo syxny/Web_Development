@@ -52,7 +52,7 @@
       echo "<div class='info'>";
       echo "<div class='bd'><p> Brand Category: " . ucwords($result[0]['category']) . "</p><br><p>";
       echo $result[0]['description'] . "</p></div>";
-      echo "<img class='bi' src='" . $result[0][' logo_img'] . "' alt='" . $result[0]['brand'] . " logo'>" ; echo "</div>" ; 
+      echo "<img class='bi' src='" . $result[0]['logo_img'] . "' alt='" . $result[0]['brand'] . " logo'>" ; echo "</div>" ; 
       // Display the related products, if any 
       echo "<h2 class='highl'>Related Products</h2>" ; $products=$result; if ($result[0]['product_id'] !==null) { echo "<div class='card-container'>" ; foreach ($products as $product) { echo "<div class='cardz'><img class='card-img' src='" . $product['product_img'] . "' alt='" . $product['name'] . "'><p class='card-text'>" . ucwords($product['name']) . "</p></div>" ; } echo "</div>" ;                     } else {
       // Display a message if no products were found related to the brand 
